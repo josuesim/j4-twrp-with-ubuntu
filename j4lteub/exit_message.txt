@@ -1,0 +1,40 @@
+Device tree successfully made, you can find it in samsung/j4lteub
+
+Note: This device tree should already work, but there can be something that prevent booting the recovery, for example a kernel with OEM modifications that doesn't let boot a custom recovery, or that disable touch on recovery
+If this is the case, then see if OEM provide kernel sources and build the kernel by yourself
+Here below there is the generation log
+
+Info: 
+------------------------------------------------------------------------
+SebaUbuntu's TWRP device tree generator
+Version=1.2
+Device name=Samsung Galaxy J4 2018
+Device codename=j4lteub
+Date and time=jue 30 jul 2020 20:53:52 CST
+OS=Linux
+------------------------------------------------------------------------
+
+Starting device tree generation
+
+Info: Device is connected
+Info: Value not found with ADB or ADB has not been used, using generic values for 1st CPU variant
+Info: Value not found with ADB or ADB has not been used, using generic values for 2nd CPU variant
+Info: Device SoC manufacturer is samsungexynos7570
+Obtaining stock recovery image info... done
+Info: Device is arm
+Info: DTB are not appended to kernel
+Copying kernel... done
+Copying DTB... done
+Extracting fstab... done
+Copying A/B stuff... done
+Extracting init.rc files... done
+Adding license headers... done
+Generating fstab... done
+Info: Device is not system-as-root
+Generating Android.mk... done
+Generating AndroidProducts.mk... done
+Generating BoardConfig.mk... done
+Generating omni_j4lteub.mk... done
+Generating vendorsetup.sh... done
+This is a Samsung device, appending SEANDROIDENFORCE to recovery image with custom mkbootimg... done
+Creating ready-to-push git repo... done
